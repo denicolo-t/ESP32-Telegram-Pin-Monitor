@@ -12,11 +12,19 @@
 // --- Pin digitale da monitorare ---
 #define PIN_INPUT       4
 
-// --- Stato del pin (0/1) → stringa associata ---
-#define PIN_STATE_0     "chiuso"
-#define PIN_STATE_1     "aperto"
+// --- Stati del pin (0/1) e messaggi associati ---
+#define PIN_STATE_0_MSG "🔒 Pin chiuso"
+#define PIN_STATE_1_MSG "🔓 Pin aperto"
 
 // --- Comando Telegram per interrogare lo stato ---
 #define CMD_STATO       "stato"
+
+// --- Messaggi generali ---
+#define MSG_START       "🚀 *ESP32 avviato* e connesso alla rete Wi-Fi!"
+#define MSG_WIFI_RECON  "✅ *ESP32 riconnesso* alla rete Wi-Fi!"
+#define MSG_WIFI_LOST   "⚠️ Wi-Fi persa! Tentativo di riconnessione..."
+#define MSG_PIN_CHANGE_PREFIX "Pin aggiornato: "
+#define MSG_PIN_STATUS  "📌 Stato pin attuale: "
+#define MSG_ERROR_WIFI  "❌ Impossibile inviare messaggio, Wi-Fi non connessa"
 
 #endif
