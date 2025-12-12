@@ -8,7 +8,7 @@ long lastUpdateId = 0;
 bool wifiConnected = false;
 
 // ------------------------------------------------------
-// Invio messaggi Telegram
+// Invio messaggi Telegram con emoji e Markdown
 // ------------------------------------------------------
 void sendTelegramMessage(const String& message) {
     if (WiFi.status() != WL_CONNECTED) {
